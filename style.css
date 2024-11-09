@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+#navbar {
+    background: #f9f9f9;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 2px 4px black;
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color: #ffa500;
+    /* Accent color */
+}
+
+.navbar-toggler span {
+    color: #ffa500;
+
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: color 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    color: #ffa500;
+
+}
+
+.nav-item .nav-link.active {
+    color: #ffa500;
+    font-weight: 700;
+}
+
+/* Navbar Button */
+.navbar form button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar form button:hover {
+    background: #e69500;
+}
+
+/* Home Section */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(./images/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.home .content h5 {
+    color: white;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+
+}
+
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.change-content::after {
+    color: #e69500;
+    content: '';
+    text-shadow: 0px 1px 1px black;
+    animation: changetxt 10s infinite linear;
+
+}
+
+@keyframes changetxt {
+    0% {
+        content: "France";
+    }
+
+    10% {
+        content: "India";
+    }
+
+    20% {
+        content: "United States";
+    }
+
+    30% {
+        content: "China";
+    }
+
+    40% {
+        content: "Spain";
+    }
+
+    50% {
+        content: "Itlay";
+    }
+
+    60% {
+        content: "Pakistan";
+    }
+
+    70% {
+        content: "Africa";
+    }
+
+    80% {
+        content: "Turkey";
+    }
+
+    90% {
+        content: "Mexico";
+    }
+
+    100% {
+        content: "Germany";
+    }
+
+
+}
+
+.home .content p {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a {
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 200;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5sec;
+}
+
+.home .content a:hover {
+    background: #ffa500;
+    color: white;
+}
+
+@media(min-width:850px) {
+    .home {
+        background-position: 50%;
+    }
+
+}
+
+@media(min-width:450px) {
+    .home .content h5 {
+        font-size: 55px;
+    }
+
+    .home .content h1 {
+        font-size: 40px;
+    }
+
+    .home .content p {
+        font-size: 13px;
+    }
+
+}
+
+/* Section starts */
+.book {
+    background: #f9f9f9;
+    padding: 50px;
+
+}
+
+.main-text h1 {
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+
+.main-text h1 span {
+    color: #ffa500;
+}
+
+.book .card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book .row {
+    margin-top: 30px;
+}
+
+.book form input {
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book form textarea {
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+
+.book .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550px;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+
+}
+
+.book .submit:hover {
+    width: 170px;
+
+}
+
+@media(min-width:765px) {
+    .book {
+        padding: 0;
+    }
+
+    .main-text h1 {
+        padding: 20px;
+    }
+}
+
+/* Section ends */
+
+
+
+
+/* Package section starts */
+.main-text {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+.main-text h1 span {
+    color: #ffa500;
+}
+
+.packages .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.packages .card img {
+    border-radius: 5px;
+
+}
+
+.packages .card .card-body {
+    background: transparent;
+}
+
+.packages .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.packages .card .card-body p {
+    font-size: 15px;
+}
+
+.checked {
+    color: #ffa500;
+}
+
+.star i {
+    font-size: 15px;
+}
+
+.packages .card .card-body h6 {
+    font-size: 20px;
+}
+
+.packages .card .card-body a {
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+
+}
+
+/* Package section ends*/
+
+
+/* Services section starts */
+
+.services {
+    background: #f9f9f9;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.services .card {
+    box-shadow: rgba(0, 0, 0, 0.1)0px 4px 12px;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 10px -4px rgba(0, 0, 0, 0.3);
+}
+
+.services .card i {
+    font-size: 80px;
+    color: #ffa500;
+    margin-top: 20px;
+}
+
+.services .card:hover i {
+    color: #e69500;
+}
+
+.services .card .card-body h3 {
+    font-weight: 600;
+}
+
+.services .card .card-body {
+    text-align: center;
+}
+
+/* Services section ends */
+
+/* Gallery section starts */
+.gallery {
+    margin-top: 50px;
+}
+
+.gallery .card {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+
+}
+
+.gallery .card img {
+    border-radius: 10px;
+    transition: 0.5sec;
+}
+
+.gallery .card img:hover {
+    transform: scale(1.1);
+}
+
+/* Gallery section ends */
+
+/* about start */
+.about{
+    padding: 50px;
+    margin-top:50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+.about p{
+    font-weight: 500;
+}
+
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+#about-btn:hover{
+    width: 170px;
+}
+
+@media(min-width:765px) {
+    .about{
+        padding: 0;
+    }
+}
+
+
+
+/* about ends */
+
+
+
+/* Footer */
+.footer {
+    background-color: #565454;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+.footer h1 span {
+    color: #ffa500; 
+}
+
+.footer p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.footer .social-links i {
+    font-size: 24px;
+    color: #ffa500;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links i:hover {
+    color: #e69500;
+}
+
+.footer .credit, .footer .copyright {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.footer .credit a {
+    color: #ffa500;
+    text-decoration: none;
+}
